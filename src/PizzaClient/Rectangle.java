@@ -6,6 +6,15 @@ class Rectangle implements IShape {
         _width = w;
         _height = h;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "_width=" + _width +
+                ", _height=" + _height +
+                '}';
+    }
+
     public double getArea() {
         return _width * _height;
     }

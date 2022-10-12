@@ -6,7 +6,12 @@ class Circle implements IShape {
         _radius = r;
     }
 
-
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "_radius=" + _radius +
+                '}';
+    }
 
     public double getArea() {
         return Math.PI * _radius * _radius;
